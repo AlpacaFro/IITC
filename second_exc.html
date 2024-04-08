@@ -7,12 +7,21 @@
   </head>
   <body>
     <script>
-      let rownum = 5;{
-      for (let j = 0; j < rownum; j++)
-        let row = "";{
-            for( i=0; i < (j - 1; i++))
-                row +="* " }
-                    console.log(row);
+      let rownum = 6;
+      for (let j = 1; j < rownum; j++) {
+        let row = "";
+        for (let i = 0; i < j; i++) {
+          row += "* ";
+        }
+        console.log(row);
+        if (j === 5) {
+          break;
+        }
+      }
+      let rowsym = "* ";
+      for (let s = 1; s < rownum; s++) {
+        let row2 = rowsym.repeat(rownum);
+        console.log(row2);
       }
     </script>
   </body>
