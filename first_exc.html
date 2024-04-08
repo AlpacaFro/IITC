@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let h;
+      do {
+        h = prompt("instert desireable height");
+        h = parseInt(h);
+        if (isNaN(h)) {
+          alert("Invalid input. Please enter a valid number.");
+        }
+      } while (isNaN(h));
+      let w;
+      do {
+        w = prompt("instert desireable width");
+        w = parseInt(w);
+        if (isNaN(w)) {
+          alert("Invalid input. Please enter a valid number.");
+        }
+      } while (isNaN(w));
+      let s = h * w;
+      console.log(s);
+      let o = (h + w) * 2;
+      console.log(o);
+    </script>
+  </body>
+</html>
