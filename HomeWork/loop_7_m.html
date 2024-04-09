@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let rownum = 6;
+      for (let j = 1; j < rownum; j++) {
+        let row = "";
+        for (let i = 0; i < j; i++) {
+          row += "* ";
+        }
+        console.log(row);
+        if (j === 5) {
+          break;
+        }
+      }
+      let rowsym = "* ";
+      for (let s = 1; s < rownum; s++) {
+        let row2 = rowsym.repeat(rownum);
+        console.log(row2);
+      }
+    </script>
+  </body>
+</html>
