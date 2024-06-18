@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    background-color: #f8deb8; /* Light gray background */
+    padding-top: 60px; /* Ensure content doesn't hide under the fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #f5cf95, #d4eaff); /* Gradient background */
+    box-shadow: 0 15px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px 0; /* Padding for the navbar */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Position at the very top */
+    width: 100%; /* Stretch the navbar across the width of the screen */
+    z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.nav-text {
+    color: #f87c7c; /* Light blue text color */
+    font-size: 28px; /* Larger font size */
+    font-weight: 600; /* Semi-bold font weight */
+    letter-spacing: normal;
+    transition: all 1s ease; /* Smooth transition for hover effect */
+}
+
+.nav-text:hover {
+    color: #319bd8; /* Darker blue text color on hover */
+    transform: scale(1.15); /* Slightly enlarge text on hover */
+    letter-spacing: 3px;
+    transition: all 1s ease; 
+}
+
+#colorChanger {
+   height: 20vh;
+    width: 40vh;
+    border-radius: 20px;
+    border-color: #000000;
+    border-style: dashed;
+    background-color: #f5cf95;
+    color: #1395ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem auto 0; /* Center horizontally and add top margin */
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#colorChanger:hover {
+    color: #af40fa;
+    letter-spacing: 3px;
+    padding-left: 5px;
+    transition: all 0.5s ease; 
+    width: 350px;
+    
+}
+
+#Changer-text {
+    font-size: 3vh;
+}
